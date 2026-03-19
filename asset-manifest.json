@@ -1,7 +1,26 @@
 {
   "files": {
-    "main.css": "/my-photography-portfolio/static/css/main.bb4e95fe.css",
-    "main.js": "/my-photography-portfolio/static/js/main.cef71a35.js",
+    "main.css": "/my-photography-portfolio/static/css/main.6e97ff66.css",
+    "main.js": "/my-photography-portfolio/static/js/main.e73632eb.js",
+    "static/media/DSC01371.JPG": "/my-photography-portfolio/static/media/DSC01371.c6bc87d3a5b0439e7942.JPG",
+    "static/media/DSC01377.JPG": "/my-photography-portfolio/static/media/DSC01377.2e4043aa2d78f9002bca.JPG",
+    "static/media/DSC01284.JPG": "/my-photography-portfolio/static/media/DSC01284.fb5606fa92c86d3e206f.JPG",
+    "static/media/DSC01513.JPG": "/my-photography-portfolio/static/media/DSC01513.77c5ee90795f8ee0802d.JPG",
+    "static/media/DSC01577.JPG": "/my-photography-portfolio/static/media/DSC01577.71165cc625555c59fc2f.JPG",
+    "static/media/DSC00708.JPG": "/my-photography-portfolio/static/media/DSC00708.5057fbbb9c8e05e77a18.JPG",
+    "static/media/DSC00564.JPG": "/my-photography-portfolio/static/media/DSC00564.d499219231fe647f1811.JPG",
+    "static/media/DSC00832.JPG": "/my-photography-portfolio/static/media/DSC00832.2d4d8555aea72701e90e.JPG",
+    "static/media/DSC01255.JPG": "/my-photography-portfolio/static/media/DSC01255.4bd76e51927cd9292ab0.JPG",
+    "static/media/DSC00669.JPG": "/my-photography-portfolio/static/media/DSC00669.3e6aed5ce97b34d7dad4.JPG",
+    "static/media/DSC01228.JPG": "/my-photography-portfolio/static/media/DSC01228.9228d9ba5a71817f03ad.JPG",
+    "static/media/DSC01206.JPG": "/my-photography-portfolio/static/media/DSC01206.970d806d56706d70b2f1.JPG",
+    "static/media/DSC01413.JPG": "/my-photography-portfolio/static/media/DSC01413.0e3cc86e5af9171bb532.JPG",
+    "static/media/DSC00699.JPG": "/my-photography-portfolio/static/media/DSC00699.52c13361c783ebc42a55.JPG",
+    "static/media/DSC01521.JPG": "/my-photography-portfolio/static/media/DSC01521.1c61214b573cc107538f.JPG",
+    "static/media/DSC01598.JPG": "/my-photography-portfolio/static/media/DSC01598.e89bb587fb25db89d3f7.JPG",
+    "static/media/DSC00771.JPG": "/my-photography-portfolio/static/media/DSC00771.3183f0a814edcbd48f31.JPG",
+    "static/media/DSC00670.JPG": "/my-photography-portfolio/static/media/DSC00670.f2c7cb5af1f26f3df508.JPG",
+    "static/media/DSC00747.JPG": "/my-photography-portfolio/static/media/DSC00747.1478f29c1d851995eb13.JPG",
     "static/media/556FF32A-1C3D-4407-A55A-6AE22A288246_1_105_c.jpeg": "/my-photography-portfolio/static/media/556FF32A-1C3D-4407-A55A-6AE22A288246_1_105_c.9472dc83c6311e298225.jpeg",
     "static/media/CE36D2E2-8FB9-4FA7-9837-01D27CBBC8D8_1_105_c.jpeg": "/my-photography-portfolio/static/media/CE36D2E2-8FB9-4FA7-9837-01D27CBBC8D8_1_105_c.46b16046fac835e040c0.jpeg",
     "static/media/44351688-45B7-4FA3-9234-77E0278B3835_1_105_c.jpeg": "/my-photography-portfolio/static/media/44351688-45B7-4FA3-9234-77E0278B3835_1_105_c.7bb3f4c47099e5622767.jpeg",
@@ -9,11 +28,11 @@
     "static/media/74E95E64-F884-4F7C-941D-C556478D21D8_1_105_c.jpeg": "/my-photography-portfolio/static/media/74E95E64-F884-4F7C-941D-C556478D21D8_1_105_c.9baba19c3fc49af03d1c.jpeg",
     "static/media/46CFEFA4-2434-4062-8EA1-B2544F5C51B5_1_105_c.jpeg": "/my-photography-portfolio/static/media/46CFEFA4-2434-4062-8EA1-B2544F5C51B5_1_105_c.28b58dca3a089733d539.jpeg",
     "index.html": "/my-photography-portfolio/index.html",
-    "main.bb4e95fe.css.map": "/my-photography-portfolio/static/css/main.bb4e95fe.css.map",
-    "main.cef71a35.js.map": "/my-photography-portfolio/static/js/main.cef71a35.js.map"
+    "main.6e97ff66.css.map": "/my-photography-portfolio/static/css/main.6e97ff66.css.map",
+    "main.e73632eb.js.map": "/my-photography-portfolio/static/js/main.e73632eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb4e95fe.css",
-    "static/js/main.cef71a35.js"
+    "static/css/main.6e97ff66.css",
+    "static/js/main.e73632eb.js"
   ]
 }
