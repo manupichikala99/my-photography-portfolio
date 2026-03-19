@@ -19,7 +19,7 @@ function App() {
       <About />
       <Contact />
       <footer className="footer">
-        <p>&copy; {new Date().getFullYear()} Manojna Pichikala. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} peakthrumylens. All rights reserved.</p>
       </footer>
     </div>
   );

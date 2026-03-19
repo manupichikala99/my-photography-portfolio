@@ -1,24 +1,7 @@
+/* Legacy styles - main styles are in css/App.css */
 body {
   margin: 0;
   font-family: sans-serif;
+  background-color: #000;
 }
 
-.hero {
-  height: 100vh;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background-size: cover;
-}
-
-.featured, .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-img {
-  width: 100%;
-  height: auto;
-}

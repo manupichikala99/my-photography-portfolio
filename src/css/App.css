@@ -1,3 +1,17 @@
+/* Force all images to have transparent backgrounds */
+img {
+  background-color: transparent !important;
+  mix-blend-mode: normal !important;
+}
+
+/* Force body and html to be black */
+html, body {
+  background-color: #000000 !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 /* Photography Portfolio - Black & White Theme */
 
 * {
@@ -259,7 +273,7 @@ body {
 /* Featured Section - Random Masonry Layout */
 .featured {
   padding: 6rem 3rem;
-  background: #0a0a0a;
+  background: #000000;
 }
 
 .featured-masonry {
@@ -357,13 +371,52 @@ body {
 /* Gallery Section */
 .gallery {
   padding: 8rem 3rem;
-  background-color: #000000;
+  background-color: #000000 !important;
   overflow: hidden;
+  min-height: auto;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  color: #ffffff !important;
+}
+
+.gallery::before,
+.gallery::after {
+  display: none !important;
+  content: none !important;
+  background: none !important;
+}
+
+.gallery .section-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #ffffff;
+  margin-bottom: 4rem;
+  text-align: center;
+  position: relative;
+}
+
+.gallery .section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
 }
 
 .gallery-category {
   margin-bottom: 6rem;
   position: relative;
+  background-color: #000000 !important;
+  border: none !important;
 }
 
 .gallery-category:last-child {
@@ -378,6 +431,9 @@ body {
   color: #fff;
   letter-spacing: 2px;
   position: relative;
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
 }
 
 .gallery-category-title::after {
@@ -390,6 +446,7 @@ body {
   height: 3px;
   background: #fff;
   border-radius: 2px;
+  display: none !important;
 }
 
 /* Scattered/ Creative Gallery Layout */
@@ -402,25 +459,31 @@ body {
   padding: 2rem 0;
   max-width: 1400px;
   margin: 0 auto;
+  background-color: #000000 !important;
 }
 
 .gallery-item-fun {
   position: relative;
   cursor: pointer;
-  border-radius: 12px;
+  border-radius: 0px !important;
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform: rotate(var(--rotation, 0deg)) translateY(var(--offset-y, 0px));
   animation: fadeInUp 0.6s ease forwards;
   animation-delay: var(--delay, 0s);
   opacity: 0;
-  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.05);
+  border: none !important;
+  outline: none !important;
+  background-color: #000000 !important;
+  box-shadow: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
 }
 
 .gallery-item-fun:hover {
   transform: rotate(0deg) translateY(-15px) scale(1.03);
   z-index: 10;
-  box-shadow: 0 25px 50px rgba(255, 255, 255, 0.15);
 }
 
 .gallery-item-fun img {
@@ -429,6 +492,16 @@ body {
   object-fit: cover;
   transition: transform 0.5s ease;
   display: block;
+  border: none !important;
+  outline: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  border-radius: 0px !important;
 }
 
 .gallery-item-fun:hover img {
@@ -487,13 +560,12 @@ body {
   overflow: hidden;
   border-radius: 12px;
   cursor: pointer;
-  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.05);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: none;
 }
 
 .gallery-item:hover {
   transform: translateY(-8px) scale(1.01);
-  box-shadow: 0 20px 60px rgba(255, 255, 255, 0.1);
 }
 
 .gallery-item img {
@@ -501,6 +573,8 @@ body {
   height: 350px;
   object-fit: cover;
   transition: transform 0.5s ease;
+  border: none;
+  outline: none;
 }
 
 .gallery-item:hover img {
@@ -551,6 +625,7 @@ body {
   object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  background-color: transparent;
 }
 
 .lightbox-close {
@@ -612,13 +687,13 @@ body {
   border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 0 10px 40px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .blog-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 60px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
 .blog-image {

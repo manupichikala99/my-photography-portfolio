@@ -1,0 +1,201 @@
+[
+  {
+    "id": "yosemite",
+    "name": "Yosemite",
+    "state": "California",
+    "slug": "yosemite",
+    "tagline": "Where granite cliffs meet ancient sequoias",
+    "description": "My adventure through the iconic valley with its towering waterfalls, massive granite monoliths, and the world's largest trees.",
+    "coverImage": "https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?w=1200",
+    "dateVisited": "October 2024",
+    "gallery": [
+      {
+        "url": "https://images.unsplash.com/photo-1532274402911-5a369e4c4bb5?w=800",
+        "caption": "El Capitan rising above the valley fog",
+        "category": "landscape"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=800",
+        "caption": "Bridal Veil Falls cascading down",
+        "category": "waterfall"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+        "caption": "Sunset at Tunnel View",
+        "category": "sunset"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1537551080512-fb7dd14fbf90?w=800",
+        "caption": "Half Dome at golden hour",
+        "category": "landscape"
+      }
+    ],
+    "experience": "Waking up at 4 AM to catch the sunrise at Tunnel View was worth every groggy moment. As the first rays of light hit Half Dome, the entire valley seemed to transform into something magical. The colors - deep oranges, soft purples, and that unmistakable Sierra Nevada granite glow - were unlike anything I've ever photographed.\n\nWalking among the giant sequoias in Mariposa Grove felt humbling. These ancient trees have witnessed centuries of history, standing tall while empires rose and fell. I spent hours just photographing the intricate patterns in their bark, each groove telling a story of survival and resilience.\n\nThe challenge of capturing Bridal Veil Falls in mid-afternoon light taught me about patience. I returned day after day until I caught that perfect moment when the water caught the last light of the day, creating that ethereal spray rainbow I've always dreamed of shooting."
+  },
+  {
+    "id": "zion",
+    "name": "Zion",
+    "state": "Utah",
+    "slug": "zion",
+    "tagline": "Red rock canyons and hidden waterfalls",
+    "description": "Hiking through the narrows and discovering hidden gems in Utah's first national park.",
+    "coverImage": "https://images.unsplash.com/photo-1508669232496-136b15945931?w=1200",
+    "dateVisited": "March 2024",
+    "gallery": [
+      {
+        "url": "https://images.unsplash.com/photo-1508669232496-136b15945931?w=800",
+        "caption": "The Watchman lit up at sunset",
+        "category": "sunset"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1519003300449-424423580305?w=800",
+        "caption": "The Narrows winding through",
+        "category": "adventure"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800",
+        "caption": "Angels Landing perspective",
+        "category": "view"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?w=800",
+        "caption": "Emerald Pools at dawn",
+        "category": "water"
+      }
+    ],
+    "experience": "The Narrows was the adventure of a lifetime. Wading through the Virgin River with canyon walls towering hundreds of feet on either side made me feel truly small in the best possible way. Every turn revealed a new composition - light streaming through a gap, a cascading waterfall, or the perfect reflection in a still pool.\n\nAngels Landing tested my fear of heights, but the 360-degree view from the top made every precarious step worth it. I waited for the crowds to clear and captured the canyon stretching into the distance, layers of red rock fading into the haze.\n\nWhat struck me most was the color - how the sandstone changes throughout the day. Morning light brings out the pinks and oranges, while midday creates harsh contrasts. Golden hour transforms everything into a painter's dream."
+  },
+  {
+    "id": "yellowstone",
+    "name": "Yellowstone",
+    "state": "Wyoming",
+    "slug": "yellowstone",
+    "tagline": "Where the earth breathes and bison roam",
+    "description": "Witnessing geysers, hot springs, and wildlife in America's first national park.",
+    "coverImage": "https://images.unsplash.com/photo-1555580509-843340986997?w=1200",
+    "dateVisited": "June 2024",
+    "gallery": [
+      {
+        "url": "https://images.unsplash.com/photo-1555580509-843340986997?w=800",
+        "caption": "Grand Prismatic Spring colors",
+        "category": "thermal"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1542256844-8423131e4843?w=800",
+        "caption": "Old Faithful eruption",
+        "category": "geyser"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1570041326341-ce3dc333d67d?w=800",
+        "caption": "Bison crossing the road",
+        "category": "wildlife"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800",
+        "caption": "Mammoth Hot Springs terraces",
+        "category": "thermal"
+      }
+    ],
+    "experience": "Yellowstone feels like another planet. The geothermal features create an almost surreal landscape - brilliant blue hot springs, erupting geysers, and steaming vents everywhere you look. Grand Prismatic Spring's rainbow colors are best captured from the air, but the overlook trail gives a stunning perspective.\n\nWaiting for Old Faithful to erupt became a meditation. The anticipation, the crowd's collective gasp, and then that incredible column of boiling water shooting 140 feet into the air - it's nature's performance art at its finest.\n\nThe wildlife encounters were unexpected and magical. A bison casually walking down the road, a grizzly bear grazing in a meadow at dawn, a coyote hunting in the early morning light. Yellowstone teaches you to be patient and always have your camera ready."
+  },
+  {
+    "id": "grandcanyon",
+    "name": "Grand Canyon",
+    "state": "Arizona",
+    "slug": "grandcanyon",
+    "tagline": "A cathedral carved by time",
+    "description": "Sunrises, sunsets, and the endless layers of one of Earth's greatest wonders.",
+    "coverImage": "https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?w=1200",
+    "dateVisited": "September 2024",
+    "gallery": [
+      {
+        "url": "https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?w=800",
+        "caption": "Sunrise at Mather Point",
+        "category": "sunrise"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=800",
+        "caption": "Desert View Watchtower",
+        "category": "architecture"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1515862389136-7e2c9261a555?w=800",
+        "caption": "Colorado River winding below",
+        "category": "landscape"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?w=800",
+        "caption": "Hopi Sunset colors",
+        "category": "sunset"
+      }
+    ],
+    "experience": "No photo truly prepares you for seeing the Grand Canyon in person. The scale is incomprehensible - layers of rock stretching 277 miles, a mile deep, billions of years of Earth's history exposed in technicolor stripes.\n\nI camped on the South Rim and woke at 4 AM to claim my spot at Mather Point for sunrise. As the sun crept above the horizon, the canyon transformed from shadow to gold to deep orange. The play of light and shadow across the ridges created ever-changing patterns that kept me shooting for hours.\n\nTaking the Bright Angel Trail down into the canyon changed my perspective entirely. Being surrounded by those ancient walls, hearing only the wind and distant mule bells, I began to understand why this place is sacred to Indigenous peoples. Every turn offered a new view, a new composition, a new reason to pause."
+  },
+  {
+    "id": "acadia",
+    "name": "Acadia",
+    "state": "Maine",
+    "slug": "acadia",
+    "tagline": "Where mountains meet the Atlantic",
+    "description": "Rugged coastlines, granite peaks, and the first rays of sunrise in America.",
+    "coverImage": "https://images.unsplash.com/photo-1500829243541-74b67cd459ef?w=1200",
+    "dateVisited": "October 2024",
+    "gallery": [
+      {
+        "url": "https://images.unsplash.com/photo-1500829243541-74b67cd459ef?w=800",
+        "caption": "Cadillac Mountain sunrise",
+        "category": "sunrise"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+        "caption": "Bass Harbor Head Light",
+        "category": "lighthouse"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800",
+        "caption": "Jordan Pond reflection",
+        "category": "landscape"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=800",
+        "caption": "Thunder Hole explosion",
+        "category": "ocean"
+      }
+    ],
+    "experience": "Climbing Cadillac Mountain for sunrise was a pilgrimage of sorts - being the first place in the continental US to see the sun rise each day feels momentous. The golden light painting the granite peaks and the deep blue Atlantic below was worth the 3 AM wake-up call.\n\nAcadia's coast is dramatic and moody. Bass Harbor Head Lighthouse, perched on its tiny granite island, has become one of my most photographed subjects. I've returned at different times of day, in different seasons, and it never disappoints.\n\nJordan Pond offers a peaceful counterpoint - still waters reflecting the surrounding peaks like a mirror. The classic shot of The Bubbles through the pond is iconic for good reason, but I prefer the quiet moments before other hikers arrive, when the water is perfectly calm and the reflections are crisp."
+  },
+  {
+    "id": "olympic",
+    "name": "Olympic",
+    "state": "Washington",
+    "slug": "olympic",
+    "tagline": "Three parks in one",
+    "description": "From temperate rainforests to alpine meadows to rugged coastlines.",
+    "coverImage": "https://images.unsplash.com/photo-1439123414876-07a7c63aa963?w=1200",
+    "dateVisited": "August 2024",
+    "gallery": [
+      {
+        "url": "https://images.unsplash.com/photo-1439123414876-07a7c63aa963?w=800",
+        "caption": "Hoh Rainforest moss",
+        "category": "forest"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800",
+        "caption": "Hurricane Ridge vista",
+        "category": "mountain"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800",
+        "caption": "Rialto Beach sea stacks",
+        "category": "coast"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1519003300449-424423580305?w=800",
+        "caption": "Lake Crescent reflections",
+        "category": "lake"
+      }
+    ],
+    "experience": "Olympic National Park is a study in contrasts. In one day, I went from walking through the moss-draped ancient forest of Hoh (where it rains 14 feet per year) to standing on Hurricane Ridge looking at snow-capped peaks to watching sunset on the wild Pacific coast.\n\nThe Hoh Rainforest feels prehistoric. Sword ferns, maple trees dripping with moss, and old-growth Douglas firs create a cathedral of green. Light filters through the canopy in ethereal shafts, creating perfect conditions for moody, atmospheric photography.\n\nRialto Beach at sunset is where I spent my final evening. The sea stacks, the driftwood logs, the endless roll of Pacific waves - it's the kind of place that makes you forget about everything else. I stayed until the last light faded, capturing the long exposure shots that turn water into silk."
+  }
+]
+

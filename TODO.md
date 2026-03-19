@@ -1,14 +1,9 @@
-# TODO List
+# Rebranding Task: Complete ✓
 
-## Task: Update name display and remove Travel from header
-
-### Changes Required:
-
-- [x] 1. Make name appear in single line (in `src/css/App.css`)
-  - [x] Changed `.title-line` from `display: block` to `display: inline`
-
-- [x] 2. Remove Travel from header (in `src/components/Navbar.js`)
-  - [x] Removed the `<li>` element containing the Travel link
-
-### Status: Completed ✅
-
+## Steps
+- [x] 1. Edit \`src/components/Contact.js\`: Update email to \`peakthrumylens@gmail.com\`, IG to \`https://www.instagram.com/peakthrumylens/\` and \`@peakthrumylens\`.
+- [x] 2. Edit \`src/components/About.js\`: Update alt="Manojna Pichikala" → alt="peakthrumylens".
+- [x] 3. Edit \`src/components/Navbar.js\`: Update alt="Manojna Pichikala" → "peakthrumylens", \`<span>MP</span>\` → \`<span>PTL</span>\`.
+- [x] 4. Edit \`src/components/Hero.js\`: Update alt="Manojna Pichikala" → "peakthrumylens", title "Manojna Pichikala" → "peakthrumylens".
+- [x] 5. Edit \`src/App.js\`: Update footer "Manojna Pichikala" → "peakthrumylens".
+- [x] 6. Verified (\`npm start\`).

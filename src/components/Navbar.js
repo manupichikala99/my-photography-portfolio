@@ -5,8 +5,8 @@ function Navbar() {
   return (
     <nav className="navbar">
       <a href="#home" className="logo">
-        <img src={logoPic} alt="Manojna Pichikala" className="navbar-logo-pic" />
-        <span>MP</span>
+        <img src={logoPic} alt="peakthrumylens" className="navbar-logo-pic" />
+        <span>PTL</span>
       </a>
       <ul>
         <li>

@@ -22,7 +22,7 @@ export default function Hero() {
         className="hero-background"
         style={{ transform: `translateY(${scrollY * 0.3}px)` }}
       >
-        <img src={profilePic} alt="Manojna Pichikala" />
+        <img src={profilePic} alt="peakthrumylens" />
         <div className="hero-overlay"></div>
       </div>
       
@@ -34,7 +34,7 @@ export default function Hero() {
             transform: `translateY(${scrollY * 0.2}px) scale(${1 + scrollY * 0.0005})`
           }}
         >
-          <span className="title-line">Manojna Pichikala</span>
+          <span className="title-line">peakthrumylens</span>
         </h1>
         
         <p 

@@ -13,6 +13,10 @@ const nature = importAll(
   require.context('../images/nature', false, /\.(png|jpe?g|svg)$/i)
 );
 
+const travel = importAll(
+  require.context('../images/travel', false, /\.(png|jpe?g|svg)$/i)
+);
+
 // Creative layout configurations for fun, scattered look
 const getItemClass = (index, total) => {
   const patterns = ['fun-small', 'fun-medium', 'fun-large', 'fun-tall', 'fun-wide', 'fun-small', 'fun-medium'];
@@ -30,27 +34,34 @@ export default function Gallery() {
     setSelectedImage(null);
   };
 
-  const renderCreativeGallery = (images, categoryName) => (
-    <div className="gallery-category">
-      <h3 className="gallery-category-title">{categoryName}</h3>
-      <div className="gallery-scattered">
-        {images.map((img, index) => (
-          <div 
-            key={`${categoryName}-${index}`} 
-            className={`gallery-item-fun ${getItemClass(index, images.length)}`}
-            onClick={() => openLightbox(img)}
-            style={{
-              '--delay': `${index * 0.1}s`,
-              '--rotation': `${(Math.random() - 0.5) * 6}deg`,
-              '--offset-y': `${(Math.random() - 0.5) * 30}px`,
-            }}
-          >
-            <img src={img} alt={`${categoryName} ${index + 1}`} />
-          </div>
-        ))}
+  const renderCreativeGallery = (images, categoryName) => {
+    // Don't render empty categories
+    if (!images || images.length === 0) {
+      return null;
+    }
+
+    return (
+      <div className="gallery-category">
+        <h3 className="gallery-category-title">{categoryName}</h3>
+        <div className="gallery-scattered">
+          {images.map((img, index) => (
+            <div 
+              key={`${categoryName}-${index}`} 
+              className={`gallery-item-fun ${getItemClass(index, images.length)}`}
+              onClick={() => openLightbox(img)}
+              style={{
+                '--delay': `${index * 0.1}s`,
+                '--rotation': `${(Math.random() - 0.5) * 6}deg`,
+                '--offset-y': `${(Math.random() - 0.5) * 30}px`,
+              }}
+            >
+              <img src={img} alt={`${categoryName} ${index + 1}`} />
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
-  );
+    );
+  };
 
   return (
     <section id="gallery" className="gallery">
@@ -58,27 +69,7 @@ export default function Gallery() {
       
       {renderCreativeGallery(portraits, 'Portraits')}
       {renderCreativeGallery(nature, 'Nature')}
-      
-      <div className="gallery-category">
-        <h3 className="gallery-category-title">Travel</h3>
-        <div className="gallery-scattered">
-          {/* Combine portraits and nature for travel section with scattered layout */}
-          {[...portraits, ...nature].map((img, index) => (
-            <div 
-              key={`travel-${index}`} 
-              className={`gallery-item-fun ${getItemClass(index, [...portraits, ...nature].length)}`}
-              onClick={() => openLightbox(img)}
-              style={{
-                '--delay': `${index * 0.08}s`,
-                '--rotation': `${(Math.random() - 0.5) * 8}deg`,
-                '--offset-y': `${(Math.random() - 0.5) * 40}px`,
-              }}
-            >
-              <img src={img} alt={`Travel ${index + 1}`} />
-            </div>
-          ))}
-        </div>
-      </div>
+      {renderCreativeGallery(travel, 'Travel')}
 
       {/* Lightbox Modal */}
       {selectedImage && (

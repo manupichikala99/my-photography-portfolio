@@ -6,7 +6,7 @@ export default function About() {
     <section id="about" className="about maya-about">
       <div className="about-container">
         <div className="about-image">
-          <img src={profilePic} alt="Manojna Pichikala" />
+          <img src={profilePic} alt="peakthrumylens" />
         </div>
         <div className="about-content">
           <h2>About Me</h2>

@@ -1,0 +1,652 @@
+/* National Parks Blog - Creative & Fun Styling */
+.blog {
+  padding: 8rem 3rem;
+  background: linear-gradient(180deg, #050505 0%, #0a0a0a 50%, #050505 100%);
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Decorative background elements */
+.blog::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at 30% 20%,
+    rgba(255, 107, 107, 0.03) 0%,
+    transparent 40%
+  ),
+  radial-gradient(
+    circle at 70% 80%,
+    rgba(78, 205, 196, 0.03) 0%,
+    transparent 40%
+  );
+  pointer-events: none;
+}
+
+.blog h2 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #666;
+  margin-bottom: 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.blog-intro {
+  text-align: center;
+  color: #888;
+  font-size: 1.1rem;
+  max-width: 500px;
+  margin: 0 auto 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* Parks Grid */
+.parks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Park Card */
+.park-card {
+  background: linear-gradient(145deg, #111 0%, #0a0a0a 100%);
+  border-radius: 24px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: var(--delay, 0s);
+  opacity: 0;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+}
+
+.park-card:hover {
+  transform: translateY(-15px) rotateX(3deg);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5),
+              0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.park-cover {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+
+.park-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.park-card:hover .park-cover img {
+  transform: scale(1.15);
+}
+
+.park-cover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.park-state {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.park-info {
+  padding: 1.75rem;
+}
+
+.park-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+}
+
+.park-tagline {
+  font-size: 1rem;
+  color: #aaa;
+  font-style: italic;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.park-description {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.park-meta {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.park-date,
+.park-photos {
+  font-size: 0.8rem;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Park Detail View */
+.park-detail {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.back-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #888;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transform: translateX(-5px);
+}
+
+/* Park Hero */
+.park-hero {
+  position: relative;
+  height: 60vh;
+  min-height: 400px;
+  border-radius: 24px;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.park-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.park-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.3) 50%,
+    transparent 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 3rem;
+}
+
+.park-state-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  width: fit-content;
+}
+
+.park-hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  letter-spacing: -1px;
+}
+
+.park-hero-tagline {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-style: italic;
+}
+
+/* Park Experience */
+.park-experience {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 3rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 20px;
+  padding: 2.5rem;
+  margin-bottom: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.experience-content h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.experience-content p {
+  color: #ccc;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  white-space: pre-line;
+}
+
+.experience-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 150px;
+}
+
+.meta-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+}
+
+.meta-label {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.meta-value {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Park Gallery */
+.park-gallery {
+  position: relative;
+}
+
+.park-gallery h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.gallery-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-cat-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #888;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.gallery-cat-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.gallery-cat-btn.active {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+  font-weight: 600;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery-item {
+  position: relative;
+  aspect-ratio: 4/3;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.02);
+  z-index: 10;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  border: none;
+  outline: none;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-item-overlay {
+  opacity: 1;
+}
+
+.gallery-caption {
+  display: block;
+  color: #fff;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-category {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.7rem;
+  text-transform: capitalize;
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  animation: fadeIn 0.3s ease;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2001;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(90deg);
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+  transition: all 0.3s ease;
+  z-index: 2001;
+  border-radius: 50%;
+}
+
+.lightbox-nav:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.lightbox-prev {
+  left: 2rem;
+}
+
+.lightbox-next {
+  right: 2rem;
+}
+
+.lightbox-content {
+  max-width: 90vw;
+  max-height: 90vh;
+  animation: zoomIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.lightbox-content img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.lightbox-caption {
+  text-align: center;
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.lightbox-caption p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.lightbox-category {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  text-transform: capitalize;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Card entrance animation */
+.park-card:nth-child(1) { animation-delay: 0.1s; }
+.park-card:nth-child(2) { animation-delay: 0.2s; }
+.park-card:nth-child(3) { animation-delay: 0.3s; }
+.park-card:nth-child(4) { animation-delay: 0.4s; }
+.park-card:nth-child(5) { animation-delay: 0.5s; }
+.park-card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .park-experience {
+    grid-template-columns: 1fr;
+  }
+  
+  .experience-meta {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  
+  .meta-item {
+    flex: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog {
+    padding: 5rem 1.5rem;
+  }
+  
+  .parks-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .park-hero {
+    height: 50vh;
+    min-height: 300px;
+    border-radius: 16px;
+  }
+  
+  .park-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .park-hero-overlay {
+    padding: 2rem;
+  }
+  
+  .park-name {
+    font-size: 1.4rem;
+  }
+  
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+  
+  .lightbox-nav {
+    padding: 0.75rem 1rem;
+    font-size: 2rem;
+  }
+  
+  .lightbox-prev {
+    left: 1rem;
+  }
+  
+  .lightbox-next {
+    right: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .park-cover {
+    height: 220px;
+  }
+  
+  .park-hero-title {
+    font-size: 2rem;
+  }
+  
+  .park-hero-tagline {
+    font-size: 1rem;
+  }
+  
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .gallery-categories {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .gallery-cat-btn {
+    flex-shrink: 0;
+  }
+}
+

@@ -2,34 +2,39 @@ import React, { useState } from 'react';
 
 export default function Contact() {
   const [activeTab, setActiveTab] = useState('info');
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    socialHandle: '',
-    date: '',
-    vision: ''
-  });
+  const [status, setStatus] = useState('');
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
+  // FORMSPREE FORM ENDPOINT - Sign up at https://formspree.io/ for free
+  const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mojdjadb';
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Form submission logic here
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! I will get back to you soon.');
-    setFormData({
-      name: '',
-      email: '',
-      socialHandle: '',
-      date: '',
-      vision: ''
-    });
+    setStatus('sending');
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        alert('Thank you for your message! I will get back to you soon.');
+        form.reset();
+      } else {
+        setStatus('error');
+        alert('There was an error sending your message. Please try again.');
+      }
+    } catch (error) {
+      setStatus('error');
+      alert('There was an error sending your message. Please try again.');
+    }
   };
 
   return (
@@ -57,21 +62,21 @@ export default function Contact() {
           <p>Interested in working together or have a question?</p>
           
           <div className="contact-links">
-            <a href="mailto:manojnapichikala99@gmail.com" className="contact-link email-link">
+            <a href="mailto:peakthrumylens@gmail.com" className="contact-link email-link">
               <svg className="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                 <polyline points="22,6 12,13 2,6"/>
               </svg>
-              <span>manojnapichikala99@gmail.com</span>
+              <span>peakthrumylens@gmail.com</span>
             </a>
             
-            <a href="https://www.instagram.com/manu__voyage/" target="_blank" rel="noopener noreferrer" className="contact-link instagram-link">
+            <a href="https://www.instagram.com/peakthrumylens/" target="_blank" rel="noopener noreferrer" className="contact-link instagram-link">
               <svg className="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
               </svg>
-              <span>@manu__voyage</span>
+              <span>@peakthrumylens</span>
             </a>
           </div>
         </div>
@@ -89,8 +94,6 @@ export default function Contact() {
                 type="text"
                 id="name"
                 name="name"
-                value={formData.name}
-                onChange={handleInputChange}
                 required
                 placeholder="Your name"
               />
@@ -102,8 +105,6 @@ export default function Contact() {
                 type="email"
                 id="email"
                 name="email"
-                value={formData.email}
-                onChange={handleInputChange}
                 required
                 placeholder="your@email.com"
               />
@@ -115,8 +116,6 @@ export default function Contact() {
                 type="text"
                 id="socialHandle"
                 name="socialHandle"
-                value={formData.socialHandle}
-                onChange={handleInputChange}
                 placeholder="@yourhandle"
               />
             </div>
@@ -127,8 +126,6 @@ export default function Contact() {
                 type="date"
                 id="date"
                 name="date"
-                value={formData.date}
-                onChange={handleInputChange}
               />
             </div>
             
@@ -137,8 +134,6 @@ export default function Contact() {
               <textarea
                 id="vision"
                 name="vision"
-                value={formData.vision}
-                onChange={handleInputChange}
                 required
                 placeholder="Describe your ideas, preferences, and any special requests..."
                 rows="5"
@@ -152,3 +147,4 @@ export default function Contact() {
     </section>
   );
 }
+

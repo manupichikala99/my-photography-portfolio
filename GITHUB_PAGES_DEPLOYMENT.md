@@ -25,7 +25,7 @@ git add .
 git commit -m "Initial commit - Photography Portfolio"
 
 # Add remote repository (replace with your actual repo URL)
-git remote add origin https://github.com/manupichikala99/my-photography-portfolio.git
+https://github.com/manupchikala99/my-photography-portfolio.git
 
 # Push to GitHub
 git push -u origin main
@@ -82,7 +82,7 @@ npm run deploy
 ## Your Portfolio URL
 
 Once deployed, your portfolio will be available at:
-**https://manupichikala99.github.io/my-photography-portfolio/**
+**https://peakthrumylens.github.io/my-photography-portfolio/**
 
 ## Updating Your Portfolio
 
