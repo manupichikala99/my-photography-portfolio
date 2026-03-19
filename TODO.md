@@ -1,9 +1,10 @@
-# Rebranding Task: Complete ✓
+# Deployment Update Plan for Shareable Site
 
 ## Steps
-- [x] 1. Edit \`src/components/Contact.js\`: Update email to \`peakthrumylens@gmail.com\`, IG to \`https://www.instagram.com/peakthrumylens/\` and \`@peakthrumylens\`.
-- [x] 2. Edit \`src/components/About.js\`: Update alt="Manojna Pichikala" → alt="peakthrumylens".
-- [x] 3. Edit \`src/components/Navbar.js\`: Update alt="Manojna Pichikala" → "peakthrumylens", \`<span>MP</span>\` → \`<span>PTL</span>\`.
-- [x] 4. Edit \`src/components/Hero.js\`: Update alt="Manojna Pichikala" → "peakthrumylens", title "Manojna Pichikala" → "peakthrumylens".
-- [x] 5. Edit \`src/App.js\`: Update footer "Manojna Pichikala" → "peakthrumylens".
-- [x] 6. Verified (\`npm start\`).
+- [ ] 1. Check git status and commit any new images if needed (`git add . && git commit -m "Add new images" && git push`).
+- [ ] 2. Run `npm run deploy` (runs predeploy/build + gh-pages -d build).
+- [ ] 3. Verify live site at https://manupchikala99.github.io/my-photography-portfolio/ loads new images in Gallery/Featured.
+- [ ] 4. Mark complete.
+
+Progress will be updated after each step.
+
